@@ -13,7 +13,7 @@
     <div class="container">
         <h1>Nächste Termine</h1>
         {{ $eventsBundle := .Site.GetPage "/events" }}
-        {{ range sort $eventsBundle.Pages ".Name" }}
+        {{ range sort $eventsBundle.Pages ".Params.eventdate" }}
             {{ if ge (dateFormat "2006-01-02" .Params.eventDate) (dateFormat "2006-01-02" now) }}
                 <a href={{ .URL }}>
                     <div class="event-preview">
