@@ -1,0 +1,18 @@
+baseURL = "https://www.ttc-buehl.de/"
+languageCode = "de-DE"
+DefaultContentLanguage = "de"
+title = "TurnierTanzClub Bühl"
+theme = "ttc"
+
+[menu]
+    [[menu.main_right]]
+        identifier = "facebook"
+        name = ""
+        pre = "<span class='la la-lg la-facebook'></span>"
+        url = "https://www.facebook.com/TTCBuehl/"
+    
+    [[menu.main_right]]
+        identifier = "instagram"
+        name = ""
+        pre = "<span class='la la-lg la-instagram'></span>"
+        url = "https://www.instagram.com/TTCBuehl/"

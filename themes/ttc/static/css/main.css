@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    font-family: 'Lato', serif;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+hr {
+    border: none;
+    height: 0px;
+    border-top: 2pt solid #888;
+    width: 100%;
+}
+
+header {
+    position: relative;
+}
+
+header > video, header > img {
+    width: 100%;
+}
+
+header > .overlay {
+    position: absolute;
+    background: rgba(23, 21, 39, 0.7);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header > .overlay h1 {
+    font-size: 60pt;
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 0 0 5pt rgb(78, 2, 2); 
+}
+
+.landing > .overlay h1 {
+    color: rgb(190, 0, 0);
+    font-size: 85pt;
+    line-height: 1;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+.landing > .overlay small {
+    color: white;
+    font-size: 20pt;
+    font-family: 'Lobster', cursive;
+}
+
+header > .nav-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+nav > ul {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 8pt 8pt;
+    flex-basis: 0;
+    box-sizing: border-box;
+}
+
+nav > ul > li.divider {
+    visibility: hidden;
+    flex-basis: 100%;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    padding: 4pt;
+    box-sizing: border-box;
+}
+nav > ul > li > a:visited {
+    color: white;
+}
+
+nav > ul > li > a:hover {
+    background: white;
+    color: #222;
+}
+
+nav > ul > li > a.active {
+    border-bottom: 3pt solid white;
+}
+
+footer {
+    background: #222;
+    border-top: 5pt solid #444;
+    color: #eee;
+    font-size: 10pt;
+    margin-bottom: 40pt;
+}
+
+footer h4 {
+    text-align: center;
+}
+
+footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .row > .col {
+    margin: 0 8pt;
+}
+
+footer a, footer a:visited {
+    color: rgb(53, 167, 212);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    background: #eee;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 16pt 0;
+    color: #222;
+    line-height: 1.4;
+}
+
+.content blockquote {
+    margin-left: 0;
+    color: rgb(99, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content blockquote::before {
+    content: '\00bb';
+    font-size: 24pt;
+    margin-right: 8pt;
+    margin-top: -3pt;
+    
+}
+
+.content blockquote::after {
+    content: '\00ab';
+    font-size: 24pt;
+    margin-top: -3pt;
+    margin-left: 8pt;
+}
+
+.content.red {
+    background: rgb(99, 0, 0);
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 16pt 0;
+    color: #eee;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 8pt;
+}
+
+
+
+.news-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 16pt -8pt;
+}
+
+.news-gallery .facebook {
+    min-width: 300px;
+    flex-grow: 1;
+    height: 450px;
+    padding: 0 8pt;
+}
+
+.event-preview:hover .info {
+    text-decoration: underline;
+}
+
+.event-preview {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 16pt;
+}
+
+.event-preview .calendar {
+    border-radius: 3pt;
+    border: 2pt solid #eee;
+}
+
+.event-preview .calendar .month {
+    padding: 2pt 6pt;
+    text-align: center;
+}
+
+.event-preview .calendar .day {
+    background: #eee;
+    color: rgb(99, 0, 0);
+    text-align: center;
+    padding: 2pt;
+    font-size: 16pt;
+}
+
+.event-preview .time {
+    margin-left: 16pt;
+    font-size: 16pt;
+}
+
+.event-preview .info {
+    margin-left: 16pt;
+    
+}
+
+.event-preview .info h4 {
+    margin: 4pt 0;
+}
+
+.panel {
+    margin: 24pt 0 16pt 0;
+    background: rgb(99, 0, 0);
+    color: #eee;
+    border: 2pt solid rgb(99, 0, 0);
+    border-radius: 4pt;
+}
+
+.panel > .panel-header {
+    color: rgb(99, 0, 0);
+    background: #eee;
+    border-radius: 3pt 3pt 0 0;
+    padding: 4pt;
+}
+
+.panel > .panel-header h4 {
+    margin: 0;
+}
+
+.panel > .panel-body {
+    padding: 4pt;
+}
+
+.panel > .panel-body p:first-child {
+    margin-top: 0;
+}
+
+.panel > .panel-body p:last-child {
+    margin-bottom: 0;
+}
