@@ -10,7 +10,6 @@ git config --global push.default simple
 
 rm -rf deployment
 git clone -b master https://github.com/ttc-buehl/ttc-buehl.github.io deployment
-git checkout master
 rsync -av --delete --exclude ".git" public/ deployment
 cd deployment
 git add -add
