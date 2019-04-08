@@ -8,13 +8,27 @@
         {{ .Content }}
     </div>
 </div>
+{{ if .Pages }}
 <div class="content red">
     <div class="container">
-        {{ range .Pages }}
-            <a href="{{ .URL }}">
-            {{ .Title }}
-            </a>
-        {{ end }}
+        <h1>Weitere Infos</h1>
+        <div class="pages">
+            {{ range .Pages }}
+                <div class="page">
+                    <a href="{{ .URL }}">
+                        {{ if .Resources.GetMatch "header.*" }}
+                            <img src="{{ (.Resources.GetMatch "header.*").RelPermalink }}">
+                        {{ else }}
+                            <div class="background"></div>
+                        {{ end }}
+                        <div class="overlay">
+                            {{ .Title }}
+                        </div>
+                    </a>
+                </div>
+            {{ end }}
+        </div>
     </div>
 </div>
+{{ end }}
 {{ end }}
