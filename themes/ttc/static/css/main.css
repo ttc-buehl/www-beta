@@ -140,12 +140,12 @@ footer .row > .col {
     margin: 0 8pt;
 }
 
-footer a, .content a, footer a:visited, .content a:visited {
+footer a, .container:not(.red) .content a, footer a:visited, .container:not(.red) .content a:visited {
     color: rgb(53, 167, 212);
     text-decoration: none;
 }
 
-footer a:hover, .content a:hover {
+footer a:hover, .container:not(.red) .content a:hover {
     text-decoration: underline;
 }
 

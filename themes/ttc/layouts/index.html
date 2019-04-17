@@ -15,7 +15,7 @@
         {{ $eventsBundle := .Site.GetPage "/events" }}
         {{ range sort $eventsBundle.Pages ".Params.eventdate" }}
             {{ if ge (dateFormat "2006-01-02" .Params.eventDate) (dateFormat "2006-01-02" now) }}
-                <a href={{ .URL }}>
+                <a href="{{ .RelPermalink }}">
                     <div class="event-preview">
                         <div class="calendar">
                             <div class="month">{{ index $.Site.Data.months_short (dateFormat "1" .Params.eventDate) }}</div>

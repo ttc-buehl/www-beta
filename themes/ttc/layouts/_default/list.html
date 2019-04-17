@@ -15,7 +15,7 @@
         <div class="pages">
             {{ range .Pages }}
                 <div class="page">
-                    <a href="{{ .URL }}">
+                    <a href="{{ .RelPermalink }}">
                         {{ if .Resources.GetMatch "header.*" }}
                             <img src="{{ (.Resources.GetMatch "header.*").RelPermalink }}">
                         {{ else }}
