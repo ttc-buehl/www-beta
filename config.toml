@@ -4,6 +4,8 @@ DefaultContentLanguage = "de"
 title = "TurnierTanzClub Bühl"
 theme = "ttc"
 
+staticDir = ["static"]
+
 [menu]
     [[menu.main_right]]
         identifier = "facebook"

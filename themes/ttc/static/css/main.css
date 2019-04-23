@@ -48,6 +48,7 @@ header > .overlay {
 header > .overlay h1 {
     font-size: 60pt;
     font-family: 'Lobster', sans-serif;
+    font-weight: normal;
     text-shadow: 0 0 5pt rgb(78, 2, 2); 
 }
 
@@ -140,12 +141,12 @@ footer .row > .col {
     margin: 0 8pt;
 }
 
-footer a, .container:not(.red) .content a, footer a:visited, .container:not(.red) .content a:visited {
+footer a,  .content:not(.red) a, footer a:visited, .content:not(.red) a:visited {
     color: rgb(53, 167, 212);
     text-decoration: none;
 }
 
-footer a:hover, .container:not(.red) .content a:hover {
+footer a:hover, .content a:hover {
     text-decoration: underline;
 }
 
@@ -190,9 +191,9 @@ footer a:hover, .container:not(.red) .content a:hover {
 }
 
 .container {
-    max-width: 650px;
+    max-width: 650pt;
     margin: 0 auto;
-    padding: 0 8pt;
+    padding: 0 16pt;
 }
 
 
@@ -290,27 +291,24 @@ footer a:hover, .container:not(.red) .content a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 16pt -8pt;
+    margin: 8pt -8pt;
 }
 
 .pages > .page {
-    min-width: 300px;
-    max-width: 600px;
-    margin: 0 8pt;
+    flex-basis: 250pt;
+    height: 200px;
+    margin: 8pt;
     flex-grow: 1;
     position: relative;
     line-height: 0;
-}
-
-.page img {
-    width: 100%;
-    height: auto;
+    overflow: hidden;
 }
 
 .page .background {
     width: 100%;
     height: 200px;
     background: #222;
+    background-size: cover;
 }
 
 .page .overlay {
@@ -324,8 +322,9 @@ footer a:hover, .container:not(.red) .content a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40pt;
+    font-size: 32pt;
     font-family: 'Lobster', sans-serif;
+    font-weight: normal;
     text-shadow: 0 0 5pt rgb(78, 2, 2); 
 }
 

@@ -16,11 +16,7 @@
             {{ range .Pages }}
                 <div class="page">
                     <a href="{{ .RelPermalink }}">
-                        {{ if .Resources.GetMatch "header.*" }}
-                            <img src="{{ (.Resources.GetMatch "header.*").RelPermalink }}">
-                        {{ else }}
-                            <div class="background"></div>
-                        {{ end }}
+                        <div class="background" {{ if .Resources.GetMatch "header.*" }} style="background-image: url({{ (.Resources.GetMatch "header.*").RelPermalink }});" {{ end }}></div>
                         <div class="overlay">
                             {{ .Title }}
                         </div>

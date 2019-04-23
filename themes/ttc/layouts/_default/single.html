@@ -8,4 +8,12 @@
         {{ .Content }}
     </div>
 </div>
+
+{{ if .Resources.GetMatch "red.md" }}
+<div class="content red">
+    <div class="container">
+        {{ (.Resources.GetMatch "red.md").Content }}
+    </div>
+</div>
+{{ end }}
 {{ end }}
