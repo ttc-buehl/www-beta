@@ -424,4 +424,15 @@ article .summary {
         border: none;
     }
 
+    header .overlay h1 {
+        font-size: 40pt;
+    }
+
+    .landing .overlay h1 {
+        font-size: 60pt;
+    }
+    .landing .overlay small {
+        font-size: 15pt;
+    }
+
 }
