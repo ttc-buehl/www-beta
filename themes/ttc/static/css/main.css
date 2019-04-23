@@ -206,11 +206,44 @@ footer a:hover, .content a:hover {
     margin: 16pt -8pt;
 }
 
-.news-gallery .facebook {
+.news-gallery .facebook{
     min-width: 300px;
     flex-grow: 1;
+    margin: 8pt;
+    flex-basis: 450px;
+    flex-shrink: 1;
+}
+
+.facebook:empty {
     height: 450px;
-    padding: 0 8pt;
+}
+
+article {
+    min-width: 300px;
+    flex-basis: 450px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin: 8pt;
+}
+
+article h1 {
+    margin-top: 0;
+}
+
+article h1 > a, article h1 > a:visited {
+    color: inherit !important;
+}
+
+article img {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
+article .summary {
+    padding: 16pt;
 }
 
 .event-preview:hover .info {
@@ -332,4 +365,63 @@ footer a:hover, .content a:hover {
     .container {
         max-width: 800pt;
     }
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 8pt;
+        top: 8pt;
+        background: #222;
+        color: white;
+        font-size: 16pt;
+        height: 29pt;
+        width: 29pt;
+        padding: 6pt 4pt;
+        box-sizing: border-box;
+        transition: all 0.4s ease;
+    }
+
+    .nav-toggle:hover {
+        color: black;
+        background: white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul{
+        display: block;
+        background: #222;
+        padding: 8pt 0;
+    }
+
+    nav ul li {
+        padding: 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 8pt;
+    }
+
+    nav ul li a.active {
+        background: #444;
+        border: none;
+    }
+
 }

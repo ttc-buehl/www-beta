@@ -1,0 +1,11 @@
+<article>
+    {{ if .Resources.GetMatch "header.*" }}
+    <a href="{{ .RelPermalink }}"><img src="{{ (.Resources.GetMatch "header.*").RelPermalink }}"></a>
+    {{ end }}
+    <div class="summary">
+        <small>{{ .Date.Format "02.01.2006" }}</small>
+        <h1><a href="{{ .RelPermalink }}">{{ .Title  }}</a></h1>
+        {{ .Summary }}
+        <a href="{{ .RelPermalink }}">Mehr...</a>
+    </div>
+</article>

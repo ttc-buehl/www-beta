@@ -2,8 +2,11 @@
 <html>
     {{- partial "head.html" . -}}
     <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v3.2&appId=1775650905990253&autoLogAppEvents=1"></script>
         {{- block "header" . }}{{- end }}
         {{- block "main" . }}{{- end }}
         {{- partial "footer.html" . -}}
+        <script async src="/menu.js"></script>
     </body>
 </html>
