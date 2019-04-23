@@ -15,7 +15,10 @@
     function hideMenu(ev) {
         var target = ev.target;
         if (target.closest('nav') || target.closest('.nav-toggle')) return;
-        nav.classList.remove('open')
+        if (nav.classList.contains('open')) {
+            nav.classList.remove('open')
+            ev.preventDefault();
+        }
     }
 
     toggle.addEventListener('click', toggleMenu)
