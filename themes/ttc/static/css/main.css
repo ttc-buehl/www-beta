@@ -89,7 +89,6 @@ nav > ul > li {
     text-transform: uppercase;
     margin: 0;
     padding: 8pt 8pt;
-    flex-basis: 0;
     box-sizing: border-box;
 }
 
@@ -139,6 +138,14 @@ footer .row {
 
 footer .row > .col {
     margin: 0 8pt;
+}
+
+footer .logos {
+    margin-top: 8pt;
+}
+
+footer .logos a:not(:last-child) {
+    margin-right: 8pt;
 }
 
 footer a,  .content:not(.red) a, footer a:visited, .content:not(.red) a:visited {
