@@ -1,1 +1,12 @@
-<iframe class="facebook" src="https://www.facebook.com/plugins/post.php?href={{ index .Params 0 }}&width=300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+{{ $fb := (getJSON "https://graph.facebook.com/v3.3/2304735463085015_" (index .Params 0) "?access_token=EAAIn1lDcKxkBAD08QRtYjot8ZArRge3UpXQvZAnFP7Lb2md2Qo4XRuT2iluwDgw8gy35oYAtBv8f5XRWgke0vl0jaBM8NYEP4wcdKkGu4EXJpqGxuZB7rlmGf59yZCwMP7RZBZArTQyotn9n2nLC7yWWerJoRZAlHScQtTUnVvn1ksVnW48FgZChOwNyOpQ4XjH4ZBhGwH45PmgZDZD&debug=all&fields=full_picture,message,created_time,permalink_url&format=json") }}
+<article>
+    {{ if $fb.full_picture }}
+    <a href="{{ $fb.permalink_url }}"><img src="{{ $fb.full_picture }}"></a>
+    {{ end }}
+    <div class="summary">
+        <small>{{ dateFormat "02.01.2006" $fb.created_time }}</small>
+        <p>{{ replace (truncate 200 $fb.message) "\n" "<br>" | safeHTML }}</p>
+        <a href="{{ $fb.permalink_url }}">Mehr...</a>
+        <span class="la la-lg la-facebook"></span>
+    </div>
+</article>
