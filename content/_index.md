@@ -3,6 +3,7 @@ menu:
     main_left:
         pre: '<span class="la la-home"></span>'
         name: ''
+        weight: -200
 ---
 # Aktuelles
 {{< news-gallery >}}

@@ -1,6 +1,8 @@
 ---
 title: Verein
-menu: main_left
+menu:
+    main_left:
+        weight: -50
 ---
 # Über den TTC Bühl
 

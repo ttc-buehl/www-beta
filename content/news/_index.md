@@ -1,4 +1,6 @@
 ---
 title: News
-menu: main_left
+menu:
+    main_left:
+        weight: -100
 ---
