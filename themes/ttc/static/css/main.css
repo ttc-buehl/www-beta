@@ -443,3 +443,41 @@ article .summary {
     }
 
 }
+
+.right {
+    text-align: right;
+}
+
+a.btn {
+    background: white;
+    color: rgb(190, 0, 0);
+    padding: 8pt;
+    border-radius: 4pt;
+    transition: all 0.4s ease;
+    margin: 4pt;
+}
+
+a.btn:hover {
+    text-decoration: none;
+    background: #aaa;
+}
+
+a.btn.btn-blue {
+    color: white;
+    background: rgb(58, 99, 187);
+}
+
+a.btn.btn-blue:hover {
+    background: rgb(45, 75, 141);
+}
+
+h1.jumbo {
+    font-size: 48pt;
+}
+
+h1 small {
+    display: block;
+    font-family: 'Lato', serif;
+    font-size: 12pt;
+    font-weight: normal;
+}
