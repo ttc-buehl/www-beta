@@ -21,6 +21,10 @@ hr {
     width: 100%;
 }
 
+strong {
+    font-weight: bold;
+}
+
 header {
     position: relative;
     line-height: 0;
@@ -203,37 +207,24 @@ footer a:hover, .content a:hover {
     padding: 0 16pt;
 }
 
-
-
-.news-gallery {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 16pt -8pt;
-}
-
-.news-gallery .facebook{
-    min-width: 300px;
-    flex-grow: 1;
-    margin: 8pt;
-    flex-basis: 450px;
-    flex-shrink: 1;
-}
-
-.facebook:empty {
-    height: 450px;
-}
-
 article {
-    min-width: 300px;
-    flex-basis: 450px;
-    flex-shrink: 1;
-    flex-grow: 1;
-    max-width: 100%;
+    display: flex;
     border: 1px solid #ccc;
     border-radius: 2px;
     margin: 8pt;
+}
+
+article > a {
+    width: 40%;
+    display: block;
+    flex-shrink: 0;
+}
+
+article > a > .img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 article h1 {
@@ -244,12 +235,7 @@ article h1 > a, article h1 > a:visited {
     color: inherit !important;
 }
 
-article img {
-    width: 100%;
-    border-radius: 2px 2px 0 0;
-}
-
-article .summary {
+article > .summary {
     padding: 16pt;
 }
 
@@ -378,7 +364,46 @@ article .summary {
     display: none;
 }
 
-@media (max-width: 768px) {
+.right {
+    text-align: right;
+}
+
+a.btn {
+    background: white;
+    color: rgb(190, 0, 0);
+    padding: 8pt;
+    border-radius: 4pt;
+    transition: all 0.4s ease;
+    margin: 4pt;
+    box-sizing: border-box;
+}
+
+a.btn:hover {
+    text-decoration: none;
+    background: #aaa;
+}
+
+a.btn.btn-blue {
+    color: white;
+    background: rgb(58, 99, 187);
+}
+
+a.btn.btn-blue:hover {
+    background: rgb(45, 75, 141);
+}
+
+h1.jumbo {
+    font-size: 48pt;
+}
+
+h1 small {
+    display: block;
+    font-family: 'Lato', serif;
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+@media (max-width: 800px) {
 
     .nav-toggle {
         display: block;
@@ -442,42 +467,16 @@ article .summary {
         font-size: 15pt;
     }
 
-}
+    article {
+        display: block;
+    }
 
-.right {
-    text-align: right;
-}
+    article > a {
+        width: 100%;
+        height: 300pt;
+    }
 
-a.btn {
-    background: white;
-    color: rgb(190, 0, 0);
-    padding: 8pt;
-    border-radius: 4pt;
-    transition: all 0.4s ease;
-    margin: 4pt;
-}
-
-a.btn:hover {
-    text-decoration: none;
-    background: #aaa;
-}
-
-a.btn.btn-blue {
-    color: white;
-    background: rgb(58, 99, 187);
-}
-
-a.btn.btn-blue:hover {
-    background: rgb(45, 75, 141);
-}
-
-h1.jumbo {
-    font-size: 48pt;
-}
-
-h1 small {
-    display: block;
-    font-family: 'Lato', serif;
-    font-size: 12pt;
-    font-weight: normal;
+    h1.jumbo {
+        font-size: 32pt;
+    }
 }

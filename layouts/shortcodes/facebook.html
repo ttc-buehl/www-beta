@@ -1,7 +1,7 @@
-{{ $fb := (getJSON "https://graph.facebook.com/v3.3/2304735463085015_" (index .Params 0) "?access_token=EAAIn1lDcKxkBADEhPUtpFzlM8r7ZCf1spSlH2SZBqgqjuJJNUpxdTOdCI3Pe3hBksmlCaM3PNDQyFfs0pte8OPdTP8BaVZBccSnZAA8fdeMZAgSSHbV43szyi5Lm1VET9LHJ6xCNuaXJ18P4JKRmW4PDzx7oyCpFIjtG6TiG5wTrAzENrIAzaSHm4GX69VLUZD&debug=all&fields=full_picture,message,created_time,permalink_url&format=json") }}
+{{ $fb := (getJSON "https://graph.facebook.com/v3.3/2304735463085015_" (index .Params 0) "?access_token=EAAIn1lDcKxkBAHHBWCCZAR1zYFOf3VhypLLjAwr2AZCm789VFPDlQInZBoE5jvECDLyRHIwWF6XUg7Y7ONCPGzzESfDJW5BA6w3DZAuznRprn3brcb0rmAZCQCmTRvubYvftbBZCmZCJGbumwgh9XEyFeuit5ZC2Qi0CJJPNqSyPWQZDZD&debug=all&fields=full_picture,message,created_time,permalink_url&format=json") }}
 <article>
     {{ if $fb.full_picture }}
-    <a href="{{ $fb.permalink_url }}"><img src="{{ $fb.full_picture }}"></a>
+    <a href="{{ $fb.permalink_url }}"><div class="img" style="background-image: url({{ $fb.full_picture }});"></div></a>
     {{ end }}
     <div class="summary">
         <small>{{ dateFormat "02.01.2006" $fb.created_time }}</small>
