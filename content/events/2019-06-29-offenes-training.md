@@ -15,8 +15,6 @@ Bei uns kannst du - egal ob mit der ohne Vorkenntnissen - ganz unverbindlich "ma
 
 Am **29. Juni 2019** von **11 bis ca. 14 Uhr**
 
-Falls du an diesem Termin leider keine Zeit hast: Am 10. Juni findet ein [weiterer Termin](/events/2019-06-10-offenes-training) statt. Du darfst natürlich auch an beiden Terminen kommen <span class="la la-lg la-smile-o"></span>
-
 # Programm
 <span class="la la-lg la-eye"></span> Einblicke in unser Techniktraining  
 <span class="la la-lg la-eye"></span> Einblicke in unser Formationstanzen  
