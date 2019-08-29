@@ -1,11 +1,14 @@
 <header class="post">
-    <img src="{{if .Resources.GetMatch "header.*"}}{{ (.Resources.GetMatch "header.*").RelPermalink }}{{else}}/header.jpg{{end}}">
+    <img
+        src="{{if .Resources.GetMatch "header.*"}}{{ (.Resources.GetMatch "header.*").RelPermalink }}{{else}}/header.jpg{{end}}">
     <div class="overlay">
         <div class="title">
-            <h1>{{ .Title }}</h1>
+            <h1>{{ .Title }} </h1>
+            {{if .Params.countdown}}<h2><span class="countdown" data-target="{{.Params.countdown}}"></span></h2>
+            {{end}}
         </div>
     </div>
-    <div class="nav-container"> 
+    <div class="nav-container">
         {{- partial "nav.html" . -}}
     </div>
 </header>

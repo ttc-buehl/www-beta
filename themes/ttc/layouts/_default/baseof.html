@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- block "header" . }}{{- end }}
-        {{- block "main" . }}{{- end }}
-        {{- partial "footer.html" . -}}
-        <script async src="/menu.js"></script>
-    </body>
+{{- partial "head.html" . -}}
+
+<body>
+    {{- block "header" . }}{{- end }}
+    {{- block "main" . }}{{- end }}
+    {{- partial "footer.html" . -}}
+    <script async src="/menu.js"></script>
+    <script async src="/countdown.js"></script>
+</body>
+
 </html>
