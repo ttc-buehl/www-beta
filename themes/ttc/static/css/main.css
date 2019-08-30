@@ -403,6 +403,22 @@ h1 small {
     font-weight: normal;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.col-half {
+    width: 50%;
+    padding: 1rem;
+    flex: 1 1 355px;
+}
+
+.content img {
+    width: 100%;
+}
+
 @media (max-width: 800px) {
 
     .nav-toggle {
