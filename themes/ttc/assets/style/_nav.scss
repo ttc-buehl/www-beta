@@ -1,0 +1,107 @@
+header > .nav-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    line-height: 1;
+}
+
+nav > ul {
+    display: flex;
+    font-family: $headline-font;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 8pt 8pt;
+    box-sizing: border-box;
+}
+
+nav > ul > li.divider {
+    visibility: hidden;
+    flex-basis: 100%;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    padding: 4pt;
+    box-sizing: border-box;
+}
+nav > ul > li > a:visited {
+    color: white;
+}
+
+nav > ul > li > a:hover {
+    background: white;
+    color: #222;
+}
+
+nav > ul > li > a.active {
+    border-bottom: 3pt solid white;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 8pt;
+        top: 8pt;
+        background: #222;
+        color: white;
+        font-size: 16pt;
+        height: 29pt;
+        width: 29pt;
+        padding: 6pt 4pt;
+        box-sizing: border-box;
+        transition: all 0.4s ease;
+    }
+
+    .nav-toggle:hover {
+        color: black;
+        background: white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul{
+        display: block;
+        background: #222;
+        padding: 8pt 0;
+    }
+
+    nav ul li {
+        padding: 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 8pt;
+    }
+
+    nav ul li a.active {
+        background: #444;
+        border: none;
+    }
+}

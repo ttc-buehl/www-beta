@@ -1,0 +1,18 @@
+body {
+    font-family: $text-font;
+    line-height: 1.4;
+    font-size: 14pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headline-font;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

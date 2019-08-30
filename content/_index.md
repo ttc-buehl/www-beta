@@ -5,7 +5,6 @@ menu:
         name: ''
         weight: -200
 ---
-# Aktuelles
 {{< news-gallery >}}
 
 {{< summary "/news/2019-07-13-sommerfest" >}}

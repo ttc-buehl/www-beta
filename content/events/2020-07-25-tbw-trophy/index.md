@@ -5,7 +5,6 @@ location: "Bürgerhaus Neuer Markt"
 url: "/trophy"
 date: 2019-08-26
 countdown: "2020-07-25T09:00:00"
-draft: true
 ---
 # TBW Trophy 2020 HGR I/II
 

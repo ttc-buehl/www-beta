@@ -3,8 +3,16 @@ languageCode = "de-DE"
 DefaultContentLanguage = "de"
 title = "TurnierTanzClub Bühl"
 theme = "ttc"
+summaryLength = 40
 
-staticDir = ["static"]
+[mount]
+    [[module.mounts]]
+        source = "static"
+        target = "static"
+    
+    [[module.mounts]]
+        source = "themes/ttc/assets"
+        target = "assets"
 
 [menu]
     [[menu.main_right]]
