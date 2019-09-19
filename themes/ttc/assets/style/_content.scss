@@ -11,6 +11,22 @@
         background: $background-red;
         color: white;
     }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+    
+    .col-half {
+        width: 50%;
+        padding: 1rem;
+        flex: 1 1 355px;
+    }
+
+    img {
+        max-width: 100%;
+    }
 }
 
 .news-gallery {
