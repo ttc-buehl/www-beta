@@ -1,0 +1,38 @@
+.event-preview {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+
+    .time {
+        margin-right: 2rem;
+        font-size: 16pt;
+    }
+
+    .info {
+        h4 {
+            margin-top: 0;
+        }
+    }
+
+    &:hover .info h4 {
+        text-decoration: underline;
+    }
+}
+
+.calendar {
+    overflow: hidden;
+    border: 1pt solid white;
+    border-radius: 4px;
+    margin-right: 1rem;
+
+    .month {
+        background: white;
+        color: $background-red;
+        text-align: center;
+    }
+
+    .day {
+        font-size:24pt;
+        padding: 0 8pt;
+    }
+}
