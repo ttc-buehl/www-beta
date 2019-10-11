@@ -1,10 +1,10 @@
 <article class="article-card">
     {{ if .Resources.GetMatch "header.*" }}
-    <a href="{{ .RelPermalink }}"><img class="card" src="{{(.Resources.GetMatch "header.*").RelPermalink }}"></a>
+    <a class="neutral" href="{{ .RelPermalink }}"><img class="card" src="{{(.Resources.GetMatch "header.*").RelPermalink }}"></a>
     {{ end }}
     <div class="summary">
         <small>{{ .Date.Format "02.01.2006" }}</small>
-        <h1><a href="{{ .RelPermalink }}">{{ .Title  }}</a></h1>
-        <a href="{{ .RelPermalink }}">{{ .Summary }}</a>
+        <h1><a class="neutral" href="{{ .RelPermalink }}">{{ .Title  }}</a></h1>
+        <a class="neutral" href="{{ .RelPermalink }}">{{ .Summary }}</a>
     </div>
 </article>

@@ -1,3 +1,6 @@
+<div class="nav-container">
+    {{- partial "nav.html" . -}}
+</div>
 <header class="post">
     <img
         src="{{if .Resources.GetMatch "header.*"}}{{ (.Resources.GetMatch "header.*").RelPermalink }}{{else}}/header.jpg{{end}}">
@@ -8,7 +11,5 @@
             {{end}}
         </div>
     </div>
-    <div class="nav-container">
-        {{- partial "nav.html" . -}}
-    </div>
+    
 </header>

@@ -45,3 +45,13 @@ header > .overlay h1 {
     font-size: 20pt;
     font-family: 'Lobster', cursive;
 }
+
+@media (max-width: 800px) {
+    .landing > .overlay h1 {
+        font-size: 56pt;
+    }
+
+    .landing > .overlay small {
+        font-size: 15pt;
+    }
+}

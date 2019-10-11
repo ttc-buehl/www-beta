@@ -5,7 +5,7 @@
     {{ end }}
     <div class="summary">
         <small>{{ dateFormat "02.01.2006" $fb.created_time }}</small>
-        <p><a href="{{ $fb.permalink_url }}">{{ replace (truncate 250 $fb.message) "\n" "<br>" | safeHTML }}</a></p>
+        <p><a class="neutral" href="{{ $fb.permalink_url }}">{{ replace (truncate 250 $fb.message) "\n" "<br>" | safeHTML }}</a></p>
         <span class="la la-lg la-facebook"></span>
     </div>
 </article>
