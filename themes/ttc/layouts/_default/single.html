@@ -3,6 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
+{{- partial "title.html" . -}}
 <div class="content">
     <div class="container {{ if not .Params.nocard }} article-card noclick {{ end }}">
         <div class="summary">{{ .Content }}</div>
