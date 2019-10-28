@@ -1,38 +1,47 @@
 header {
-    position: relative;
+    position: fixed;
     line-height: 0;
+    z-index: -1;
+    width: 100%;
 }
 
 header video, header img {
     width: 100%;
-    min-height: 30vh;
-    max-height: 70vh;
+    //min-height: 30vh;
+    //max-height: 70vh;
+    height: 100vh;
     object-fit: cover;
 }
 
-header > .overlay {
+.overlay {
+    height: 100vh;
     position: absolute;
     background: rgba(23, 21, 39, 0.7);
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+    
+}
+
+.title {
+    height: 100vh;
     color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     line-height: 1;
 }
 
-header > .overlay h1 {
+.title h1 {
     font-size: 60pt;
     font-family: 'Lobster', sans-serif;
     font-weight: normal;
     text-shadow: 0 0 5pt rgb(78, 2, 2); 
 }
 
-.landing > .overlay h1 {
+.landing.title > h1 {
     color: $background-red;
     font-size: 85pt;
     line-height: 1;
@@ -41,18 +50,18 @@ header > .overlay h1 {
     margin: 0;
 }
 
-.landing > .overlay small {
+.landing.title small {
     color: white;
     font-size: 20pt;
     font-family: 'Lobster', cursive;
 }
 
 @media (max-width: 800px) {
-    .landing > .overlay h1 {
+    .landing.title h1 {
         font-size: 56pt;
     }
 
-    .landing > .overlay small {
+    .landing.title small {
         font-size: 15pt;
     }
 }

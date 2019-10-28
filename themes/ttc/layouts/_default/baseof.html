@@ -4,8 +4,11 @@
 
 <body>
     {{- block "header" . }}{{- end }}
-    {{- block "main" . }}{{- end }}
-    {{- partial "footer.html" . -}}
+    <div class="wrapper">
+        {{- partial "title.html" . -}}
+        {{- block "main" . }}{{- end }}
+        {{- partial "footer.html" . -}}
+    </div>
     <script async src="/menu.js"></script>
     <script async src="/countdown.js"></script>
 </body>

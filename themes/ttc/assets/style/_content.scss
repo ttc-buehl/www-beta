@@ -1,6 +1,6 @@
 .content {
     z-index: 100;
-    background: $background-grey;
+    background: none;
     .container {
         margin: 0 auto;
         padding: 1rem 2rem;
@@ -9,8 +9,10 @@
     }
 
     &.red {
+        padding-top: 0;
         background: $background-red;
         color: white;
+        z-index: 99999;
     }
 
     .row {

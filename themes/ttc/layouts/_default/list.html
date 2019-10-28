@@ -4,8 +4,10 @@
 
 {{ define "main" }}
 <div class="content">
-    <div class="container">
-        {{ .Content }}
+    <div class="container {{ if not .Params.nocard }} article-card noclick {{ end }}">
+        <div class="summary">
+            {{ .Content }}
+        </div>
     </div>
 </div>
 {{ if .Pages }}
@@ -17,7 +19,7 @@
                 <div class="page">
                     <a href="{{ .RelPermalink }}">
                         <div class="background" {{ if .Resources.GetMatch "header.*" }} style="background-image: url({{ (.Resources.GetMatch "header.*").RelPermalink }});" {{ end }}></div>
-                        <div class="overlay">
+                        <div class="text">
                             {{ .Title }}
                         </div>
                     </a>

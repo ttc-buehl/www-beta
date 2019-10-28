@@ -3,6 +3,7 @@ title: Verein
 menu:
     main_left:
         weight: -50
+nocard: true
 ---
 
 {{< news-gallery >}}

@@ -6,3 +6,12 @@ body, html {
 body {
     background: $background-dark;
 }
+
+.wrapper {
+    top: 48pt;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    position: absolute;
+}
