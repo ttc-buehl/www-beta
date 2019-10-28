@@ -47,11 +47,11 @@
     width: 100%;
     flex-wrap: wrap;
 
-    &:hover {
+    &:not(.noclick):hover {
         transform: scale(1.02);
     }
 
-    & > a {
+    & > a, & > .img {
         display: block;
         position: relative;  
         flex-shrink: 1;
