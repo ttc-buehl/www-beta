@@ -1,7 +1,8 @@
 ---
-title: Verein
+title: Vereinsgeschichte
 menu:
     main_left:
+        parent: verein
         weight: -50
 nocard: true
 ---

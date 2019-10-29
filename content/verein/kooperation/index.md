@@ -1,6 +1,10 @@
 ---
 title: "Projekte"
+menu:
+    main_left:
+        parent: verein
 ---
+# Kooperation Windeck-Gymnasium
 
 Seit Beginn des Schuljahres 2018/2019 besteht die Kooperation zwischen dem TurnierTanzClub Bühl und dem Windeck Gymnasium Bühl. Die Kooperation ermöglicht es den Schülerinnen & Schülern des Windeck Gymnasiums kostenlos an einer Tanz-AG teilzunehmen. Zugeschnitten auf die jeweiligen Altersklassen bietet der TurnierTanzClub Bühl in den Räumlichkeiten des Windeck Gymnasiums zwei Tanz-AGs an.
 
@@ -20,7 +24,7 @@ Durchgeführt und geleitet werden die Tanz-AGs von Frau Gabi Braun (1. Vorsitzen
 
 Alle Schülerinnen und Schüler des Windeck Gymnasiums Bühl mit und ohne tänzerische Vorkenntnisse. 
 
-Du kennst die Serie Let‘s dance? Du findest es beeindruckend, wie sich die Tänzerinnen und Tänzer bewegen und wie elegant sie aussehen?Du würdest das gerne selbst einmal ausprobieren?
+Du kennst die Serie Let‘s dance? Du findest es beeindruckend, wie sich die Tänzerinnen und Tänzer bewegen und wie elegant sie aussehen? Du würdest das gerne selbst einmal ausprobieren?
 
 Dann bist du bei uns genau richtig! Wir zeigen dir, was es heißt sich zu Musik zu bewegen, dabei elegant auszusehen und – das ist das Wichtigste – Spaß dabei zu haben.
 
