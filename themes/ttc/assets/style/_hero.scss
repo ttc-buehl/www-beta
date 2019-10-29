@@ -27,21 +27,28 @@ header video, header img {
 .title {
     height: 100vh;
     color: white;
-    text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 1;
 }
 
+.title img {
+    width: 250pt;
+    filter: drop-shadow(0 0 5pt rgb(78, 2, 2));
+}
+
 .title h1 {
+    position: relative;
+    top: -16pt;
     font-size: 60pt;
     font-family: 'Lobster', sans-serif;
     font-weight: normal;
     text-shadow: 0 0 5pt rgb(78, 2, 2); 
 }
 
-.landing.title > h1 {
+.landing.title h1 {
     color: $background-red;
     font-size: 85pt;
     line-height: 1;
@@ -51,6 +58,8 @@ header video, header img {
 }
 
 .landing.title small {
+    position: relative;
+    top: -16pt;
     color: white;
     font-size: 20pt;
     font-family: 'Lobster', cursive;

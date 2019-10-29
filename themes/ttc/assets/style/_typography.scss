@@ -29,3 +29,7 @@ a {
 .red a {
     color: $link-color-red;
 }
+
+img[src*="#contain"] {
+    object-fit: contain !important;
+}
