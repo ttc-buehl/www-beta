@@ -1,5 +1,9 @@
 ---
 title: "Vorstand"
+menu:
+    main_left:
+        parent: verein
+        weight: -40
 ---
 # Vorstand
 

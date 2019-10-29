@@ -2,7 +2,7 @@
 Title: "Lateinformation"
 menu:
     main_left:
-        name: Formation
+        parent: turnier
 ---
 # Lateinformation des TTC Bühl
 
