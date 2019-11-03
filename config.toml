@@ -15,18 +15,6 @@ summaryLength = 40
         target = "assets"
 
 [menu]
-    [[menu.main_left]]
-        identifier = "verein"
-        name = "Verein"
-        url = ""
-        weight = 5
-    
-    [[menu.main_left]]
-        identifier = "turnier"
-        name = "Turniertanz"
-        url = ""
-        weight = 10
-
     [[menu.main_right]]
         identifier = "facebook"
         name = ""

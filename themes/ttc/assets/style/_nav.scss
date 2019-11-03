@@ -8,98 +8,52 @@
     z-index: 100;
 }
 
-nav {
-    & > ul {
-        display: flex;
-        font-family: $headline-font;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    
+nav > ul {
+    display: flex;
+    font-family: $headline-font;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
-        li {
-            list-style-type: none;
-            text-transform: uppercase;
-            margin: 0;
-            padding: 8pt 8pt;
-            box-sizing: border-box;
+nav > ul > li {
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 8pt 8pt;
+    box-sizing: border-box;
+}
 
-            .sub-menu {
-                position: absolute;
-                background: #222;
-                margin-top: 8pt;
-                margin-bottom: 0;
-                opacity: 0;
-                overflow: hidden;
-                display: block;
-                visibility: hidden;
-                padding: 0;
-                width: auto;
-                box-sizing: border-box;
-                transition: visibility 0s, opacity 0.4s ease;
-                li {
-                    a, & > span {
-                        background: none;
-                        color: white;
-                    }
-                    padding-left: 0;
-                    transition: background 0.2s ease;
-                }
+nav > ul > li.divider {
+    visibility: hidden;
+    flex-basis: 100%;
+}
 
-                li.active {
-                    background: #444;
-                }
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    padding: 4pt;
+    box-sizing: border-box;
+}
 
-                li:hover {
-                    background: #fff;
-                    a, & > span {
-                        color: black;
-                    }
-                }
-            }
-        }
+nav > ul > li > a:visited {
+    color: white;
+}
 
-        li.divider {
-            visibility: hidden;
-            flex-basis: 100%;
-        }
+nav > ul > li > a:hover {
+    background: white;
+    color: #222;
+    text-decoration: none;
+}
 
-        li > a, li > span {
-            color: white;
-            text-decoration: none;
-            transition: all 0.4s ease;
-            padding: 4pt;
-            box-sizing: border-box;
-        }
-
-        li > a:visited {
-            color: white;
-        }
-
-        li:hover {
-            a, & > span {
-                background: white;
-                color: #222;
-                text-decoration: none;
-
-                
-            }
-            .sub-menu {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
-
-        & > li > a.active, & > li > span.active {
-            border-bottom: 3pt solid white;
-        }
-    }
+nav > ul > li > a.active {
+    border-bottom: 3pt solid white;
 }
 
 .nav-toggle {
     display: none;
 }
-
 
 @media (max-width: 800px) {
 
@@ -126,8 +80,6 @@ nav {
 
     nav {
         display: none;
-        max-height: 100vh;
-        overflow-y: auto;
     }
 
     nav.open {
@@ -140,57 +92,18 @@ nav {
         padding: 8pt 0;
     }
 
-    nav > ul > li {
+    nav ul li {
         padding: 0;
-        & > span {
-            font-size: 0.7em;
-            color: #aaa;
-        }
-
-        &:not(:first-child) {
-            border-top: 1pt solid #ccc;
-        }
-
-        &:hover {
-            & > span {
-                background: none;
-                color: #aaa;
-            }
-
-            .sub-menu > li > a {
-                color: white;
-            }
-        }
-
-        .sub-menu {
-            position: relative;
-            visibility: visible;
-            opacity: 1;
-            background: none;
-            margin-top: 0;
-            color: white;
-            font-size: 14pt;
-
-            li {
-                padding: 0;
-            }
-
-            li:hover {
-                a, &>span {
-                    color: black;
-                }
-            }
-        }
     }
 
-    nav ul li a, nav ul li > span {
+    nav ul li a {
         width: 100%;
         display: block;
         margin: 0;
         padding: 8pt;
     }
 
-    nav ul li a.active, nav ul li > span.active {
+    nav ul li a.active {
         background: #444;
         border: none;
     }

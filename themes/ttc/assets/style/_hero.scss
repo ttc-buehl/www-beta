@@ -66,18 +66,11 @@ header video, header img {
 }
 
 @media (max-width: 800px) {
-
-    .landing.title img {
-        width: 100pt;
-    }
-
     .landing.title h1 {
-        top: -4pt;
-        font-size: 48pt;
+        font-size: 56pt;
     }
 
     .landing.title small {
-        top: -4pt;
-        font-size: 12pt;
+        font-size: 15pt;
     }
 }

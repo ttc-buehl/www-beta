@@ -1,8 +1,6 @@
 ---
-title: Einzeltanz
-menu: 
-    main_left:
-        parent: turnier
+title: Einzelpaare
+menu:  main_left
 ---
 
 # Einzeltanz beim TTC Bühl
