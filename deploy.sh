@@ -2,7 +2,7 @@
 
 set -e
 
-if [ $TRAVIS_REPO_SLUG -eq "ttc-buehl/www-beta" ]; then
+if [ "$TRAVIS_REPO_SLUG" = "ttc-buehl/www-beta" ]; then
     BRANCH="gh-pages"
 else
     BRANCH="master"
