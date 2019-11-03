@@ -9,7 +9,7 @@ git config --global user.name "TTC Bot"
 git config --global push.default simple
 
 rm -rf deployment
-git clone -b master https://github.com/ttc-buehl/ttc-buehl.github.io deployment
+git clone -b master https://github.com/${TRAVIS_REPO_SLUG} deployment
 rsync -av --delete --exclude ".git" public/ deployment
 cd deployment
 git add -A
