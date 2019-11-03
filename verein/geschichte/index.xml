@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vereinsgeschichte on TurnierTanzClub Bühl</title>
+    <link>https://www.ttc-buehl.de/verein/geschichte/</link>
+    <description>Recent content in Vereinsgeschichte on TurnierTanzClub Bühl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    
+	<atom:link href="https://www.ttc-buehl.de/verein/geschichte/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
