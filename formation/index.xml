@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lateinformation on TurnierTanzClub Bühl</title>
+    <link>https://www.ttc-buehl.de/formation/</link>
+    <description>Recent content in Lateinformation on TurnierTanzClub Bühl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    
+	<atom:link href="https://www.ttc-buehl.de/formation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Training</title>
+      <link>https://www.ttc-buehl.de/formation/training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ttc-buehl.de/formation/training/</guid>
+      <description>Formationstraining Choreographie-Training Jeden Donnerstag, 19:00 Uhr bis 21:00 Uhr, in der Reblandhalle Altschweier
+Technik-Training Jeden Samstag, 09:30 Uhr bis 12:00 Uhr, in der Cititanzschule Bühl</description>
+    </item>
+    
+  </channel>
+</rss>

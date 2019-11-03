@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Verein on TurnierTanzClub Bühl</title>
+    <link>https://www.ttc-buehl.de/verein/</link>
+    <description>Recent content in Verein on TurnierTanzClub Bühl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    
+	<atom:link href="https://www.ttc-buehl.de/verein/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mitgliedsantrag</title>
+      <link>https://www.ttc-buehl.de/verein/mitgliedsantrag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ttc-buehl.de/verein/mitgliedsantrag/</guid>
+      <description>Mitglieder im TTC Bühl Aktive Mitglieder Aktive Mitglieder des TTC Bühl sind alle aktiven Tänzer der Lateinformation und alle Einzelturnierpaare.
+Wenn auch du aktives Mitglied des TTCs werden möchtest, dann melde dich gerne bei unserem Sportwart. Probetrainings sind jederzeit möglich.</description>
+    </item>
+    
+    <item>
+      <title>Projekte</title>
+      <link>https://www.ttc-buehl.de/verein/kooperation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ttc-buehl.de/verein/kooperation/</guid>
+      <description>Seit Beginn des Schuljahres 2018&amp;frasl;2019 besteht die Kooperation zwischen dem TurnierTanzClub Bühl und dem Windeck Gymnasium Bühl. Die Kooperation ermöglicht es den Schülerinnen &amp;amp; Schülern des Windeck Gymnasiums kostenlos an einer Tanz-AG teilzunehmen. Zugeschnitten auf die jeweiligen Altersklassen bietet der TurnierTanzClub Bühl in den Räumlichkeiten des Windeck Gymnasiums zwei Tanz-AGs an.</description>
+    </item>
+    
+    <item>
+      <title>Satzung</title>
+      <link>https://www.ttc-buehl.de/verein/satzung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ttc-buehl.de/verein/satzung/</guid>
+      <description>.container  ol { counter-reset: list; } .container  ol  li { list-style: none; position: relative; } .container  ol  li:before { counter-increment: list; content: &#34;(&#34;counter(list) &#34;) &#34;; position: absolute; left: -1.4em; }  Satzung des TurnierTanzClub Bühl e.</description>
+    </item>
+    
+    <item>
+      <title>Vorstand</title>
+      <link>https://www.ttc-buehl.de/verein/vorstand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ttc-buehl.de/verein/vorstand/</guid>
+      <description>Vorstand 1. Vorsitzende Frau Gabi Braun
+vorstand@ttc-buehl.de
+2. Vorsitzender Herr Felix Kamm
+vorstand@ttc-buehl.de
+Kassenwartin Frau Melanie Lorenz
+kassenwart@ttc-buehl.de
+Schriftführer Herr Patrick Lutz
+schriftführer@ttc-buehl.de</description>
+    </item>
+    
+  </channel>
+</rss>
