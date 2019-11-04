@@ -145,6 +145,17 @@ Weitere Informationen auf der <a href="https://www.cititanzschule.de/events/">Se
 </footer></div>
     <script async src="/menu.js"></script>
     <script async src="/countdown.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

@@ -179,6 +179,17 @@ Das Finale der TBW Trophy in der Hauptgruppe I/II wird 2020 vom TTC Bühl ausger
 </footer></div>
     <script async src="/menu.js"></script>
     <script async src="/countdown.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

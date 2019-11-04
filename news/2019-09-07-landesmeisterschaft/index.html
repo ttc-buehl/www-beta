@@ -145,6 +145,17 @@ Das nächste große Ziel ist nun das Heimturnier im Juli 2020 in Bühl. Weitere 
 </footer></div>
     <script async src="/menu.js"></script>
     <script async src="/countdown.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

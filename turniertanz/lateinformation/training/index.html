@@ -163,6 +163,17 @@ Tel: +49 7223 2830141</p>
 </footer></div>
     <script async src="/menu.js"></script>
     <script async src="/countdown.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
