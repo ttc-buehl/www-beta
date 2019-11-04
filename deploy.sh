@@ -3,8 +3,10 @@
 set -e
 
 if [ "$TRAVIS_REPO_SLUG" = "ttc-buehl/www-beta" ]; then
+    CNAME="beta.ttc-buehl.de"
     BRANCH="gh-pages"
 else
+    CNAME="ttc-buehl.de"
     BRANCH="master"
 fi
 
@@ -18,6 +20,7 @@ rm -rf deployment
 git clone -b $BRANCH https://github.com/${TRAVIS_REPO_SLUG} deployment
 rsync -av --delete --exclude ".git" public/ deployment
 cd deployment
+echo $CNAME > CNAME
 git add -A
 
 git commit -m "rebuilding site on `date`, commit ${TRAVIS_COMMIT} and job ${TRAVIS_JOB_NUMBER}" || true
